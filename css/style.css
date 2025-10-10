@@ -1,0 +1,19 @@
+body {
+    background-color: lightgrey;
+}
+nav{
+    background-color: violet ;
+}
+nav ul {
+    display: flex;
+    gap: .75rem;
+    list-style: none;
+}
+.container{
+    background-color:aqua;
+}
+#main{
+    background-color: cadetblue;
+}
+
+/* Name{Property: Value */
