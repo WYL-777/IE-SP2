@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(135deg, #0ea5e9 0%, #a78bfa 50%, #f472b6 100%);
+    height: 300vh;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    /* justify-content: space-between; */
+    /* justify-content: center; */
+    /* justify-content: flex start; */
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 25px;
+}
+
+.flex-item {
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, .12);
+    height: 300px;
+    width: 30%;
+    background-color: white;
+}
+
+/* card */
+.card-grid {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    padding: 0 5%;
+    background-color: white;
+}
+
+.card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.hero {
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(https://picsum.photos/1200/600) center/cover;
+    color: white;
+}
+
+.hero h1 {
+    font-size: clamp(2rem, 5vw, 4rem);
+}
+
+/* navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    background-color: rgb(0, 255, 42);
+}
+
+.nav-list {
+    display:
+        none;
+}
+
+.nav-list.active {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 600px) {
+    .menu-toggle {
+        display:
+            none;
+    }
+
+    .nav-list {
+        display: flex;
+        gap: 1.5rem;
+    }
+}
+
+
+/* Gemini */
+.media-block{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  
+  max-width: 1200px;
+  margin:auto 40px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: white;
+}
+
+.media-image {
+    flex-basis: 40%
+}
+
+.media-text {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.media-text {
+    flex-basis: 60%
+}
+
+@media (max-width: 768px) {
+    .media-block {
+        flex-direction: column;
+    }
+
+    .media-image,
+    .media-text {
+        flex-basis: 100%
+    }
+}
