@@ -1,0 +1,74 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #4b4b4b;
+}
+
+/* Top Bar */
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background: #3e83f7;
+}
+
+.title {
+    font-size: 32px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: 2px solid #000;
+    background: #5da0ff;
+    border-radius: 8px;
+}
+
+.menu .nav-btn {
+    margin-left: 15px;
+    padding: 8px 25px;
+    font-size: 20px;
+    border-radius: 6px;
+    border: 2px solid black;
+    background: #5da0ff;
+    cursor: pointer;
+}
+
+/* Hero Image Section */
+.hero {
+    margin: 30px auto;
+    width: 90%;
+    height: 380px;
+    background: #3e83f7;
+    border: 3px solid #f0e660;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Category Boxes */
+.categories {
+    margin-top: 30px;
+    padding-bottom: 40px;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.category-box {
+    width: 200px;
+    height: 200px;
+    background: #3e83f7;
+    border: 3px solid #f0e660;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    text-align: center;
+    color: #000;
+}
